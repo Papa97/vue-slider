@@ -32,7 +32,7 @@ const app = new Vue ({
     },
     methods : {
         prossimaImmagine: function() {
-            if (this.currentImg == (this.immagini.lenght - 1) ){
+            if (this.currentImg == this.immagini.length - 1 ){
                 this.currentImg = 0
             } else {
                 this.currentImg++
@@ -40,7 +40,7 @@ const app = new Vue ({
         },
         precedenteImmagine : function () {
             if (this.currentImg == 0){
-                this.currentImg = this.immagini.lenght - 1
+                this.currentImg = this.immagini.length - 1 
             } else {
                 this.currentImg--
             }
