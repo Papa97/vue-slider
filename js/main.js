@@ -32,10 +32,18 @@ const app = new Vue ({
     },
     methods : {
         prossimaImmagine: function() {
-            this.currentImg++
+            if (this.currentImg == (this.immagini.lenght - 1) ){
+                this.currentImg = 0
+            } else {
+                this.currentImg++
+            }
         },
         precedenteImmagine : function () {
-            this.currentImg--
+            if (this.currentImg == 0){
+                this.currentImg = this.immagini.lenght - 1
+            } else {
+                this.currentImg--
+            }
         }
     }
 });

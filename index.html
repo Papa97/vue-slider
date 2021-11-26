@@ -33,7 +33,11 @@
             </div>
           </div>
           <div class="vertical-img">
-            <div class="cont-img-vert" v-for="image in immagini">
+            <div
+              class="cont-img-vert"
+              v-for="image in immagini"
+              @click="currentImg"
+            >
               <img :src="image.src" alt="prova" />
             </div>
             <!-- <div class="cont-img-vert">
